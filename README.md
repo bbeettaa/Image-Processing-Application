@@ -17,8 +17,11 @@ This software is designed for advanced image processing and analysis, providing 
 
 ### 2. **Blur Filters**
 The software includes various blur filters for pre-processing images, such as:
+- Box Blur
 - Gaussian blur
 - Median blur
+
+![Image Blur: Original, Box, Median, Gaussian](https://github.com/bbeettaa/Image-Processing-Application/blob/main/Blur.png?raw=true)
 
 These filters are applied through the `BlurFilter` interface, which requires a kernel size as a parameter for processing images.
 
@@ -27,11 +30,19 @@ Two clustering algorithms are available for segmenting images:
 - **K-means clustering**: Implements the K-means algorithm to segment images based on color or intensity.
 - **Otsu's thresholding**: A method for automatic image thresholding, commonly used in image segmentation tasks.
 
+![K-means clustering](https://github.com/user-attachments/assets/ce05121e-8139-425d-b7b0-ccffeab71c17)
+![Otsu's thresholding](https://github.com/user-attachments/assets/1dd275f6-659a-4b5b-9ae4-a47c9fa2fd61)
+
+
+
 ### 4. **Edge Detection**
 The system offers several edge detection operators, such as:
 - **Sobel Operator**
-- **Prewitt Operator**
 - **Roberts Cross Operator**
+- **Prewitt Operator**
+
+![Edge Detection: Original, Sobel, Roberts, Prewitt](https://github.com/user-attachments/assets/69c06633-10fd-4063-9480-1f9715ed8e8d)
+
 
 Each operator uses different kernels to detect edges in images, helping to identify boundaries and structures within the image.
 
@@ -41,6 +52,10 @@ Each operator uses different kernels to detect edges in images, helping to ident
 ### 6. **Histogram Processing**
 - **CLAHE (Contrast Limited Adaptive Histogram Equalization)**: Enhances image contrast adaptively.
 - **Histogram Equalization**: Enhances contrast across the entire image by redistributing pixel intensity values.
+
+![CLAHE](https://github.com/user-attachments/assets/02757989-ac0c-4642-a4ac-d2c45a0a3477)
+![Histogram Equalization](https://github.com/user-attachments/assets/f1752e71-c09b-43fe-9387-988dc88889d7)
+
 
 ### 7. **Memento Pattern for Image State Management**
 The software implements the Memento design pattern to manage image state changes:
